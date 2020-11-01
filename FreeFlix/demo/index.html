@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ming Yeung" />
+    <title>FreeFlix</title>
+    <link rel="stylesheet" type="text/css" href="../dist/zoomslider.css" />
+    <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="../demo/main.css">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
+</head>
+
+<body>
+    <div id="demo-1" data-zs-src='["photos/2.jpg", "photos/dil.jpg", "photos/1.jpg", "photos/4.jpg","photos/mirj.jpg", "photos/end.jpg"]' data-zs-overlay="dots">
+
+        <div class="container">
+
+            <header>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">FreeFlix </a>
+                    <br>
+                    <a href="#popular-movies">Popular Movies</a>
+                    <a href="#webseries">Web Series</a>
+                    <a href="#multiplexmovies">MultiPlex Movies</a>
+                    <a href="#superheroes">Best of SuperHeros</a>
+                    <a href="#latest">Special & Latest Movies</a>
+
+                </div>
+
+                <!-- Use any element to open the sidenav -->
+                <span onclick="openNav()"><img src="../demo/photos/download.png" width="40px" style="margin: 4px;"></span>
+
+                <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                <div id="main">
+                </div>
+
+                <center>
+                    <img class="logo" src="../demo/photos/1.png" alt="">
+
+                </center>
+
+                <h3> Welcome <span id="result"></span> !</h3>
+                <script>
+                    document.getElementById("result").innerHTML = localStorage.getItem("textvalue");
+                </script>
+            </header>
+        </div>
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+
+
+
+        <!--Popular Movies-->
+
+
+    </div>
+    <div class="title">
+        <h1>Popular Movies</h1>
+    </div>
+
+    <!--Carousel Gallery-->
+    <div class="carousel-gallery" id="popular-movies">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="../demo/movies/housefull.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/Housefull_4_poster.jpg)">
+                            <div class="overlay">
+                                <em>
+                                    Housefull-4
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/Avengers.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/4.jpg)">
+                            <div class="overlay">
+                                <em>
+                                  Avengers-Endgame
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/dil.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/dil-bechara.jpg)">
+                            <div class="overlay">
+                                <em>
+                               Dil-Bechara
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/mission.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/3.jpg)">
+                            <div class="overlay">
+                                <em>
+                                    Mission Mangal
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/chichhore.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/2.jpg)">
+                            <div class="overlay">
+                                <em>
+                                   Chhichhorre
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/captain.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/5.jpg)">
+                            <div class="overlay">
+                                <em>
+                                 Captain America
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--#Carousel Gallery-->
+
+
+
+
+    <!--Web Series-->
+
+
+    </div>
+    <div class="title">
+        <h1>Web Series</h1>
+    </div>
+
+    <!--Carousel Gallery-->
+    <div class="carousel-gallery" id="webseries">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="../demo/movies/asur.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/asur.jpg)">
+                            <div class="overlay">
+                                <em>
+                                   Asur
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/money.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/money.jpeg)">
+                            <div class="overlay">
+                                <em>
+                                         Money Heist
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/scared.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/sacred.jpg)">
+                            <div class="overlay">
+                                <em>
+                            Scared Games-2
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/dark.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/dark.jpg)">
+                            <div class="overlay">
+                                <em>
+                                  Dark
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <a href="../demo/movies/money.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/money.jpeg)">
+                            <div class="overlay">
+                                <em> Money Heist
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/lucifer.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/luci.jpg)">
+                            <div class="overlay">
+                                <em>Lucifer
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--#Carousel Gallery-->
+
+
+
+
+
+    <!--Multiplex Movies-->
+
+
+    </div>
+    <div class="title">
+        <h1>Multiplex Movies</h1>
+    </div>
+
+    <!--Carousel Gallery-->
+    <div class="carousel-gallery" id="multiplexmovies">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <a href="../demo/movies/laxmmi.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/Lakshmi.jpg)">
+                            <div class="overlay">
+                                <em>
+                                      Laxmmi Bomb
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="../demo/movies/big.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/big.jpg)">
+                            <div class="overlay">
+                                <em>
+                                         Big Bull
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/bhuj.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/bhuj.webp)">
+                            <div class="overlay">
+                                <em>
+                                       Bhuj
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/chichhore.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/2.jpg)">
+                            <div class="overlay">
+                                <em>
+                                      Chhichhorre
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/thanaji.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/ta.jpg)">
+                            <div class="overlay">
+                                <em>
+                                       Tanhaji
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/khuda.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/khuda.jpg)">
+                            <div class="overlay">
+                                <em>
+                                     Khuda Haafij
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--#Carousel Gallery-->
+
+
+
+
+
+    <!--Popular Movies-->
+
+
+    </div>
+    <div class="title">
+        <h1>Best of Superheroes</h1>
+    </div>
+
+    <!--Carousel Gallery-->
+    <div class="carousel-gallery" id="superheroes">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="../demo/movies/thor.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/674511-v.jpg)">
+                            <div class="overlay">
+                                <em>
+                                       Thor
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/iron.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/iron.jpg)">
+                            <div class="overlay">
+                                <em>
+                                        Iron Man-2
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/civil.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/civil.jpg)">
+                            <div class="overlay">
+                                <em>
+                                        Civil War
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/guard.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/gurd.webp)">
+                            <div class="overlay">
+                                <em>
+                                           Guardians
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/ant.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/ant.jpg)">
+                            <div class="overlay"> <em>
+                                        Ant Man WASP
+                                </em>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/captain.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/5.jpg)">
+                            <div class="overlay">
+                                <em>
+                                     Captain America
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--#Carousel Gallery-->
+
+
+
+
+
+    <!--Specials & Latest Movies-->
+
+
+    </div>
+    <div class="title">
+        <h1>Specials & Latest Movies</h1>
+    </div>
+
+    <!--Carousel Gallery-->
+    <div class="carousel-gallery" id="latest">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="../demo/movies/angrezi.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/angreji.webp)">
+                            <div class="overlay">
+                                <em>
+                                         Angreji Medium
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/chappak.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/chapak.webp)">
+                            <div class="overlay">
+                                <em>
+                                        Chappak
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/thanaji.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/ta.jpg)">
+                            <div class="overlay">
+                                <em>
+                                         Thanaji
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/specials.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/special.jpg)">
+                            <div class="overlay">
+                                <em>
+                                      Specials
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/bahut.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/6.jpg)">
+                            <div class="overlay">
+                                <em>Bahut Hua Sammaan
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="../demo/movies/city.html">
+                        <div class="image" style="background-image: url(../demo/photos/movies/city.webp)">
+                            <div class="overlay">
+                                <em>
+                                       City of Dreams
+                                </em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--#Carousel Gallery-->
+
+
+
+    <!-- Footer  -->
+
+
+    <div class="footer">
+        <ul>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="https://www.github.com/AMostafaH/" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/AMostafaH/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+
+        </ul>
+        <p>Made with <i class="fa fa-heart fa-fw fa-lg"></i> by Kushal Anjana</p>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script src="../demo/js/carousle.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.zoomslider.min.js"></script>
+
+</body>
+
+</html>

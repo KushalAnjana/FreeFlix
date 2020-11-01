@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahut Hua Samman
+
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+</head>
+<style>
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../photos/moviepage/bahut.webp);
+        background-size: cover;
+    }
+    
+    .logo1 {
+        width: 150px;
+        margin-top: 3px;
+    }
+    
+    .header {
+        height: 10%;
+    }
+    
+    .header-btn {
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 7px 20px;
+        float: right;
+        margin-top: 29px;
+        color: #fff !important;
+        background: #107afd;
+        font-weight: 600;
+    }
+    
+    .header h3 {
+        color: white;
+        font-family: "Courier";
+        font-weight: 900px;
+        font-size: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 20em;
+        margin-left: 70%;
+        margin-top: -6%;
+        animation: type 4s steps(60, end);
+    }
+    
+    @media (max-width: 430px) {
+        .header h3 {
+            margin-left: 0;
+            width: 14em;
+            font-size: 20px;
+        }
+    }
+    
+    @keyframes type {
+        from {
+            width: 0;
+        }
+    }
+    
+    @keyframes type2 {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 0;
+        }
+        100% {
+            width: 100;
+        }
+    }
+    
+    @keyframes blink {
+        to {
+            opacity: .0;
+        }
+    }
+    
+    .movie-details {
+        margin: 5% 7%;
+    }
+    
+    .left-box {
+        color: #fff;
+    }
+    
+    .casting img {}
+    
+    .left-box a {
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 7px 20px;
+        margin-top: 49px;
+        color: #fff !important;
+        background: #107afd;
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .left-box a:hover {
+        border: 1px solid #fff !important;
+        background: transparent;
+    }
+    
+    .fa {
+        margin: 0 5px;
+    }
+    
+    .movie-img {
+        height: 350px;
+        box-shadow: -4px 4px 5px 0 #000;
+        opacity: 0.6;
+    }
+    
+    .series h3 {
+        color: #fff;
+    }
+    
+    .series img {
+        width: 100%;
+        margin-top: 15px;
+        box-shadow: -4px 4px 5px 0 #000;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .series img:hover {
+        transform: translateY(-10px);
+    }
+    
+    @media (max-width: 428px) {
+        #player {
+            height: 300px;
+            width: 240px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container header">
+
+        <img src="../photos/1.png" alt="" class="logo1">
+        <h3> Welcome <span id="result"></span> !</h3>
+        <script>
+            document.getElementById("result").innerHTML = localStorage.getItem("textvalue");
+        </script>
+
+
+
+
+    </div>
+    <div class="container movie-details">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div id="player"></div>
+            </div>
+
+            <div class="col-md-6 left-box">
+                <br><br>
+                <h1>Bahut Hua Samman</h1>
+                <p>Bahut Hua Samman is a 2020 Indian Hindi-language comedy film directed by Ashish Shukla, produced and bankrolled by Yoodlee films, film division of Saregama starring Raghav Juyal, Abhishek Chauhan, Sanjay Mishra, Ram Kapoor, Nidhi Singh,
+                    Namit Das and Flora Saini</p>
+
+                <script>
+                    // 2. This code loads the IFrame Player API code asynchronously.
+                    var tag = document.createElement('script');
+
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                    // 3. This function creates an <iframe> (and YouTube player)
+                    //    after the API code downloads.
+                    var player;
+
+                    function onYouTubeIframeAPIReady() {
+                        player = new YT.Player('player', {
+                            height: '390',
+                            width: '640',
+                            videoId: 'j8LZ8OUpNZ4',
+
+                        });
+                    }
+
+                    // 4. The API will call this function when the video player is ready.
+                    function onPlayerReady(event) {
+                        event.target.playVideo();
+                    }
+
+                    // 5. The API calls this function when the player's state changes.
+                    //    The function indicates that when playing a video (state=1),
+                    //    the player should play for six seconds and then stop.
+                    var done = false;
+
+                    function onPlayerStateChange(event) {
+                        if (event.data == YT.PlayerState.PLAYING && !done) {
+                            setTimeout(stopVideo, 6000);
+                            done = true;
+                        }
+                    }
+
+                    function stopVideo() {
+                        player.stopVideo();
+                    }
+                </script>
+            </div>
+
+        </div>
+    </div>
+    <div class="container series">
+        <h3>
+            Related Movies
+        </h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="../movies/chappak.html"><img src="../photos/movies/chapak.webp" alt="" height="110"></a>
+                    </div>
+                    <div class="col-6">
+                        <a href="../movies/specials.html"> <img src="../photos/moviepage/special.webp" alt="" height="110"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="../movies/thanaji.html"> <img src="../photos/moviepage/thaa.jpg" alt=""></a>
+                    </div>
+                    <div class="col-6">
+                        <a href="../movies/angrezi.html"> <img src="../photos/moviepage/angezi.webp" height="110" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
